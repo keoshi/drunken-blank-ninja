@@ -1,0 +1,122 @@
+/**
+ * Filipe Varela / keoshi.com
+ * Blank Template
+ * Updated on 2014-12-22
+ */
+
+/**
+ * Reset
+ */
+@charset UTF-8;
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}
+body{line-height:1;}
+:focus{outline:1;}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block;}
+nav ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:none;}
+a{border:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}
+ins{background-color:#ff9;color:#000;text-decoration:none;}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700;}
+del{text-decoration:line-through;}
+abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help;}
+table{border-collapse:collapse;border-spacing:0;}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}
+input,select{vertical-align:middle;}
+sup,sub{font-size:smaller;}
+sup{vertical-align:super;}
+sub{vertical-align:sub;}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**
+ * Typography
+ */
+body {
+	font: 100%/1.625 sans-serif;
+}
+a {
+	color: crimson;
+	text-decoration: none;
+}
+a:hover {
+	color: coral;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0.2em;
+	line-height: 1.2em;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2.2em;
+}
+h3 {
+	font-size: 1.5em;
+}
+h4 {
+	font-size: 1.2em;
+}
+h5, h6 {
+	font-size: 1em;
+}
+p {
+	margin-bottom: 1.625em;
+}
+
+/**
+ * Structure
+ */
+.wrap {
+	max-width: 48em;
+	margin: 3em auto;
+	position: relative;
+}
+
+/**
+ * Menu
+ */
+#menu {
+	margin: 0 auto;
+}
+#menu li {
+	display: inline-block;
+}
+#menu.locked {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+/**
+ * Misc
+ */
+.clear:after,
+[class*="content"]:after,
+[class*="site"]:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/**
+ * Transitions
+ */
+a {
+	-webkit-transition:	all 0.15s ease;
+	transition:			all 0.15s ease;
+}
+
+/**
+ * Media Queries
+ */
+@media screen and (max-width: 48em) {
+	.wrap {
+		padding: 0 2em;
+	}
+}
